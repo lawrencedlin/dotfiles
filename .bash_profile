@@ -22,4 +22,8 @@ export PS1="$CONDA_PROMPT_MODIFIER\$(parse_git_branch) [\[$(tput sgr0)\]\[\033[3
 
 export LSCOLORS=Eafxcxdxbxegedabagacad
 alias ls='ls -G'
-alias intelbrew='/usr/local/bin/brew'
+# Brew for intel chip and Brew for M1
+intelbrew='/usr/local/bin/brew'
+
+alias brew='/opt/homebrew/bin/brew'
+brew list > ~/dotfiles/brewlist.txt
