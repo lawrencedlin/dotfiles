@@ -1,0 +1,133 @@
+bash
+xit
+exit
+whoami
+ls
+ls ./*/*
+pwd
+ls
+cd ~
+vi
+nano
+ls
+cd Documents
+cd ~
+vim ~/.bashrc
+ls
+cd Music
+ls
+cd ..
+cd Documents
+ls
+cd ..
+pwd
+bash
+bash
+sudo
+cd /usr/bin
+ls
+cd..
+pwd
+cd ..
+ls
+cd ..
+ls
+cd usr/bin
+ls
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"\
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew help
+'brew help'
+vim ~/.zshrc
+rm ~/.zshrc
+ echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/lawrencedlin/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+brew
+brew cask install 'Spotify'
+brew cask install 'spotify'
+brew install cask
+echo $PATH
+brew cask install spotify
+brew install --cask spotify
+brew install --cask slack
+brew install --cask oom
+brew install --cask zoom
+where zoom
+which zoom
+ls
+cd Applications
+ls
+ls
+ls -la
+cd ~
+ls
+cd Applications
+ls
+cd ..
+cd ..
+ls
+cd ..
+ls
+cd Applications
+ls
+brew install --cask pycharm
+brew install --cask discord
+brew install git
+which python
+python --version
+brew install --cask anaconda
+conda
+ls
+which python
+python --version
+Anaconda-Navigator.app
+anaconda-navigator
+cd ~
+ls
+echo $PATH
+cd /opt/homebrew/bin
+ls
+cd ..
+ls
+cd anaconda3
+ls
+cd bin
+ls
+ls ..
+cd
+ls
+cd /opt/homebrew/bin/anaconda3
+ls
+cd /opt/homebrew
+ls
+cd anaconda3
+ls
+/etc/paths
+cd /etc/paths
+vi /etc/paths
+pwd
+cd bin
+pwd
+vi ~/.zshr
+vi ~/.zshrc
+vi ~/.profile
+echo $PATH
+vi ~/.zshrc
+pwd
+vi ~/.zshrc
+vi ~/.zshrc
+source ~/.zshrc
+echo $PATH
+python
+anaconda-navigator
+which pycharm
+where pycharm
+which python
+which anaconda3
+which anaconda
+cd /opt/homebrew/anaconda3/bin
+ls
+python3
+conda
+exit

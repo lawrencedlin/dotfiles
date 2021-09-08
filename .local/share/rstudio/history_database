@@ -1,0 +1,34 @@
+1628014782849:prob2 <- read.csv("~/data/msds504/BodyFatPercentage.csv")
+1628014786310:prob2
+1628014797726:prob2["ANKLE"]
+1628014815950:colnames(prob2)
+1628014823798:clear
+1628015006224:# Calculate the confidence interval
+1628015006225:confint(l.model, level=0.95)
+1628015030024:l.model <- lm(BODYFAT ~ 1, prob2)
+1628015030028:# Calculate the confidence interval
+1628015030028:confint(l.model, level=0.95)
+1628015043763:l.model <- lm(BODYFAT ~ 1, prob2)
+1628015043765:# Calculate the confidence interval
+1628015043766:confint(l.model, level=0.85)
+1628015058020:l.model
+1628015084225:summary(prob2["BODYFAT"])
+1628015186986:hwconfint <- function(data, colname, level) {
+1628015186987:print("Mean is", mean(data))
+1628015186987:print("s is ", sd(data))
+1628015186987:l.model <- lm(colname ~ 1, data)
+1628015186987:confint(l.model, level = level)
+1628015186987:}
+1628015201493:hwconfint(prob2, "BODYFAT", 0.85)
+1628015244297:source("~/.active-rstudio-document")
+1628015300463:print(c("Mean is ", mean(data[colname])))
+1628015306255:source("~/.active-rstudio-document")
+1628015326177:source("~/.active-rstudio-document")
+1628015342652:source("~/.active-rstudio-document")
+1628015351754:prob2["BODYFAT"]
+1628015355756:prob2["BODYFAT"][0]
+1628015360210:prob2["BODYFAT"]$values
+1628015365065:prob2["BODYFAT"]$BODYFAT
+1628015375190:prob2$BODYFAT
+1628015392764:source("~/.active-rstudio-document")
+1628015413068:mean(prob2$BODYFAT)

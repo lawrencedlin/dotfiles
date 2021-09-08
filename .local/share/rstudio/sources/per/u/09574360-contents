@@ -1,0 +1,19 @@
+prob2 <- read.csv("~/data/msds504/BodyFatPercentage.csv")
+# Calculate the mean and standard error
+l.model <- lm(BODYFAT ~ 1, prob2)
+
+# Calculate the confidence interval
+confint(l.model, level=0.85)
+
+summary(prob2["BODYFAT"])
+
+hwconfint <- function(data, colname, level) {
+  print(c("Mean is ", mean(data$colname)))
+  print(c("s is ", sd(data$colname)))
+  l.model <- lm(colname ~ 1, data)
+  confint(l.model, level = level)
+}
+
+hwconfint(prob2, "BODYFAT", 0.85)
+
+mean(prob2$BODYFAT)

@@ -1,0 +1,500 @@
+ls
+cd ..
+ls
+ls ~/.*
+vi hyper.js
+ls ~/.hyper.js
+vi ~/.hyper.js
+npm search hyper
+brew update hyper
+brew upgrade hyper
+brew update
+npm
+hyper
+hyper -h
+hyper ls
+hyper i gitrocket
+cd classes/msds501/inclass
+git status
+cd learn-git
+git status
+ls
+vi testrocket.txt
+git add *
+git commit -a -m "Test"
+git config --global ls
+git config --global '
+"
+git config --global ls
+git config --global 
+git config --global --get-all
+git config --global --list
+git config --global user.email
+git push
+git config --global user.email="lawrencedlin@gmail.com"
+git config -l
+git config --global  -l
+git config --local -l
+clear
+hyper i hypercwd
+hyper i hyper-active-tab
+hyper i hyperline
+hyper i hyperpower
+wow
+hyper -h
+hyper d hyperpower
+vi ~/.hyper.js
+cd ~/.hyper_plugins
+ls
+hyperpower
+hyper ls
+hyper uninstall hyper-spotify
+wow
+wow
+git push
+cd classes/msds501/inclass/learn-git
+git reset --hard -1
+git log
+git reset --hard 5d0055
+vi test.txt
+git push origin
+git pull
+git push
+vi test2.txt
+git push
+cd ../../
+cd ../msds593
+jupyter lab
+hyper ls
+hyper uninstall hyperpower
+hyper ls
+hyper -h
+hyper d hypertheme
+hyper uninstall hypertheme
+hyper i verminal
+hyper ls
+hyper uninstall verminal
+hyper install hyper-cat
+hyper i hyperborder
+hyper uninstall hyper-cat
+hyper i verminal
+hyper d verminal
+hyper uninstall verminal
+cd classes
+cd msds593
+ls
+cd lecnotes
+mv practice.ipynb practice_1.ipynb
+mv practice_1.ipynb inclass
+exiit
+exit
+cd classes/msds593 | jupyter notebook
+hyper
+hyper -h
+cd classes/msds501/inclass
+ls
+cd learn-git
+git status
+git add *
+git commit -a
+git push
+hyper install hyper-cat
+hyper rm hyper-cat
+cd classes/msds593/ | jupyter notebook
+cd classes/msds593
+cd hw
+jupyter notebook hw1.ipynb
+cd ~
+ls *.jpeg*
+cd classes/msds504
+cd ../msds593
+ls
+cd lecnotes
+open L3*
+ls
+jupyter notebook L3*
+ls classes -v
+ls -v classes
+ls -h
+ls --help
+man ls
+ls -o classes
+du -sh classes
+du -sh ~
+ls -l 
+du -sh
+ls
+cd Documents
+ls
+du -sh msds501
+du ds1-w21-PRIVATE
+du -sh ds1-w21-PRIVATE
+rm -rf ds1*
+rm -rf msds501
+ls
+cd Pics
+ls
+cd ..
+ls ~
+ls ~/.*
+cd ~/opt
+cd ~
+ls
+cd ..
+ls
+cd ..
+ls
+cd opt
+ls
+cd homebrew
+ls
+cat Caskroom
+cd Caskroom
+ls
+cd ..
+cd bin
+ls
+cd ..
+cd Cellar
+ls
+cd ..
+ls
+brew list
+brew
+cd ~/Documents
+mkdir backup_configs
+cd backup_configs
+echo $(brew list) >> brew_list.txt
+cat brew_list.txt
+brew cask list
+cp ~/.bash_profile .
+ls
+cp ~/.bash_profile ./.bash_profile
+ls
+vi /.bash_profile
+echo ~/.bash_profile >> ./.bash_profile
+ls
+man ls
+ls -a
+cat .bash_profile
+cd ~
+mv Documents/Pics/* ~/Pictures
+ls
+ls ~/Pictures
+ls Documents/Pics
+rm Documents/Pics
+rmdir Documents/Pics
+rm Documents/Pics
+ls Documents/Pics
+unzip classes/msds593/train.json.zip
+rm classes/msds593/train.json.zip
+cd classes/msds593
+ls
+cd lecnotes
+ls
+c ..
+cd ..
+head kaggle*
+mkdir data
+cd *.csv *.zip data
+mv *.csv *.zip data
+ls
+mkdir hw
+mv hw1.ipynb 'Homework 1.pdf' hw
+ls
+cd data
+ls
+unzip -h
+unzip train.json.zip -d train.json
+ls
+rm train.json.zip
+ls
+cd train.json
+ls
+cd train.json
+mv train.json ../
+mv train.json ../train.json
+ls
+cd ..
+ls
+mv train.json/train.json train1.json
+rm train.json -rf
+rmdir train.json
+ls
+mv train1.json train.json
+mv * ../hw
+ls
+rmdir .
+cd ..
+rmdir data
+ls
+mv hw1.ipynb hw
+cd hw
+ls
+open 'Homework 1.pdf'
+cal
+date
+cal 2021
+cal -h
+cal --help
+cal -A 3
+mv ~/Downloads/*msds504* ~/classes/msds504/hw
+mv ~/classes/msds504/hw msds504hw1.pdf
+mv msds504hw1.pdf ~/classes/msds504/msds504hw1.pdf
+ls
+cd
+cd
+ls
+open classes/msds504/lecnotes/*01*
+curl https://github.com/parrt/msds501/blob/master/labs/python-basics-quiz.ipynb
+curl https://github.com/parrt/msds501/blob
+wget https://github.com/parrt/msds501/blob/master/labs/python-basics-quiz.ipynb
+ls
+mv python-basics-quiz.ipynb classes/msds501
+ls classes/msds501
+jupyter notebook classes/msds501/python-basics-quiz.ipynb
+cd classes/msds501
+ls
+wget https://raw.githubusercontent.com/parrt/msds501/master/labs/python-basics-quiz.ipynb
+rm python-basics-quiz.ipynb
+mv python-bas* python-basics-quiz.ipynb
+jupyter notebook python-basics-quiz.ipynb
+open ../msds503/lecnotes/01*
+ls ../msds503
+ls ../msds504
+open ../msds504/lecnotes/01*
+cd ../msds593
+ls
+cd lecnotes
+ls
+mv inclass ..
+mv ../inclass .
+ls ..
+cd ..
+ls
+cd hw
+ls
+cd ..
+echo $ENV
+echo $ENVIRONMENT
+env
+cat ~/.bash_profile
+conda env --list
+conda env
+conda list env
+conda list -h
+conda list
+conda env
+conda info
+ls ~/.conda/envs
+ls /opt/homebrew/anaconda3/envs
+conda activate tutoring
+conda activate base
+conda info envs
+conda info --envs
+conda info -h
+man conda
+conda info -s
+conda activate tutoring
+conda info -system
+conda info -s
+vi ~/.bash_profile
+source ~/.bash_profile
+vi ~/.bash_profile
+source ~/.bash_profile
+conda info --envs
+conda activate tutoring
+conda activate base
+git rev-parse --abbrev-ref HEAD
+vi ~/.bash_profile
+source ~/.bash_profile
+vi ~/.bash_profile
+source ~/.bash_profile
+vi ~/.bash_profile
+vi ~/.bash_profile
+cd ./msds501
+cd ../msds501
+ls
+cd images*
+ls
+vi ~/.bash_profile
+source ~/.bash_profile
+vi ~/.bash_profile
+source ~/.bash_profile
+vi ~/.bash_profile
+source ~/.bash_profile
+vi ~/.bash_profile
+vi ~/.bash_profile
+source ~/.bash_profile
+cd ..
+cd ..
+source ~/.bash_profile
+vi ~/.bash_profile
+source ~/.bash_profile
+vi ~/.bash_profile
+source ~/.bash_profile
+cd msds501/images*
+vi ~/.bash_profile
+source ~/.bash_profile
+cd ..
+clear
+xtree
+tree
+brew install tree
+arch -arm64 brew install tree
+tree
+ls
+git clone https://github.com/USF-MSDS501/wordsim-lawrencedlin.git
+vi wordsim.py
+ls
+mv wordsim.py wordsim-lawrencedlin
+cd wordsim-lawrencedlin
+ls
+mkdir data
+cd data
+wget http://nlp.stanford.edu/data/glove.42B.300d.zip
+ls
+unzip *
+ls
+ls -l
+rm *.zip
+ls
+cd ..
+ls
+vi save_np.py
+ls
+python save_np.py data
+vi save_np.py
+python save_np.py data
+vi save_np.py
+python save_np.py data
+vi save_np.py
+python save_np.py data
+vi save_np.py
+python save_np.py data
+vi save_np.py
+python save_np.py data
+vi save_np.py
+python save_np.py data
+vi save_np.py
+python save_np.py data
+vi save_np.py
+python save_np.py data
+vi save_np.py
+python save_np.py data
+time python save_np.py data
+vi save_np.py
+time python save_np.py data
+vi save_np.py
+time python save_np.py data
+vi save_np.py
+head -50 glove.42B.300d.txt > g
+cd data
+head -50 glove.42B.300d.txt > glove50.txt
+cd classes/msds501
+ls
+cd word*
+ls
+cat g
+ls -al
+rm g
+git status
+vi .gitignore
+git status
+git add *
+git commit -a -m "Initial commit: completed save_np.py"
+git push
+ls data
+time python save_np.py data
+ls
+cd data
+ls
+head -50 *.vocab.txt
+head -10 *.npy
+cat glove50.txt
+cd ..
+ls
+ls /usr/share/dict/words
+cat /usr/share/dict/words
+grep -i aaronical data/*.vocab.txt
+grep -i a data/*.vocab.txt
+cd ../../
+cd msds504/lecnotes
+open *
+ls
+open 02*
+cd ../../msds593
+ls
+cd hw | jupyter notebook hw1*
+cd hw | jupyter notebook *hw*
+ls
+rm train.json
+cd classes/msds501
+ls
+cd wordsim-lawrencedli
+cd wordsim-lawrencedlin
+ls
+cd data
+ls
+cat glove50.txt
+head
+cd classes/msds501
+cd data
+ls
+cd word*/data
+ls
+head glove50.txt
+clear
+ls
+head glove*vocab.txt
+git status
+git add ../.gitignore
+export "*.idea* > ../.gitignore
+"
+export "*.idea*" > ../.gitignore
+"
+
+"
+cd ..
+ls
+git status
+git add wordsim.py
+cat .gitignore
+vi .gitignore
+ls
+git status
+git add *
+git commit -m "Complete load_glove function."
+git config --global --edit
+exit
+cd ../msds501/word*
+ls
+python save_np.py data
+git status
+git commit -a -m "Before changing to readlines()"
+ls
+python save_np.py data
+python save_np.py data
+python save_np.py data
+cd classes/msds501/wordsim*
+git status
+git add *
+git status
+git add .gitignore
+git commit -m "Finished closest_words function"
+git push
+cd ..
+git clone https://github.com/USF-MSDS501/enron-lawrencedlin.git
+ls
+cd ../msds503
+ls
+cd ../msds504
+ls
+jupyter notebook
+cd classes/msds501/words*
+ls
+cd data
+ls
+cat glove.42B.300d.txt
+netsh wlan show profile
+security find-generic-password -ga 667Ash|grep "password:"

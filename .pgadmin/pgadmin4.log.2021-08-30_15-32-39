@@ -1,0 +1,175 @@
+2021-08-29 15:56:34,565: ERROR	pgadmin:	404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Applications/pgAdmin 4.app/Contents/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Applications/pgAdmin 4.app/Contents/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Applications/pgAdmin 4.app/Contents/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/helpers.py", line 1083, in send_static_file
+    return send_from_directory(
+  File "/Applications/pgAdmin 4.app/Contents/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/helpers.py", line 767, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2021-08-29 15:58:10,094: ERROR	pgadmin:	404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Applications/pgAdmin 4.app/Contents/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Applications/pgAdmin 4.app/Contents/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Applications/pgAdmin 4.app/Contents/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/helpers.py", line 1083, in send_static_file
+    return send_from_directory(
+  File "/Applications/pgAdmin 4.app/Contents/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/helpers.py", line 767, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2021-08-29 16:48:06,698: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6618156(Query-id: 7976360):
+Error Message:ERROR:  syntax error at or near "ON"
+LINE 36:  ON UPDATE CASCADE ON DELETE CASCADE
+          ^
+SQL state: 42601
+Character: 928
+2021-08-29 16:48:19,504: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6618156(Query-id: 4725689):
+Error Message:ERROR:  syntax error at or near "ON"
+LINE 35: ...REIGN KEY (iso_code) REFERENCES covid19[iso_code] ON UPDATE ...
+                                                              ^
+SQL state: 42601
+Character: 927
+2021-08-29 16:48:37,561: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6618156(Query-id: 8005755):
+Error Message:NOTICE:  table "country" does not exist, skipping
+NOTICE:  table "covid19" does not exist, skipping
+
+ERROR:  column "location" named in key does not exist
+LINE 17:  UNIQUE ("location", iso_code)
+          ^
+SQL state: 42703
+Character: 489
+2021-08-29 16:49:26,380: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6618156(Query-id: 6652084):
+Error Message:NOTICE:  table "country" does not exist, skipping
+NOTICE:  table "covid19" does not exist, skipping
+
+ERROR:  could not open file "country.csv" for reading: No such file or directory
+HINT:  COPY FROM instructs the PostgreSQL server process to read a file. You may want a client-side facility such as psql's \copy.
+SQL state: 58P01
+2021-08-29 16:49:54,879: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6618156(Query-id: 4493638):
+Error Message:NOTICE:  table "country" does not exist, skipping
+NOTICE:  table "covid19" does not exist, skipping
+
+ERROR:  invalid input syntax for type integer: "38928341.0"
+CONTEXT:  COPY country, line 2, column population: "38928341.0"
+SQL state: 22P02
+2021-08-29 16:50:12,007: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6618156(Query-id: 403543):
+Error Message:NOTICE:  table "country" does not exist, skipping
+NOTICE:  table "covid19" does not exist, skipping
+
+ERROR:  insert or update on table "country" violates foreign key constraint "country_iso_code_fkey"
+DETAIL:  Key (iso_code)=(AFG) is not present in table "covid19".
+SQL state: 23503
+2021-08-29 16:51:12,768: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6618156(Query-id: 2387946):
+Error Message:NOTICE:  table "country" does not exist, skipping
+NOTICE:  table "covid19" does not exist, skipping
+
+ERROR:  could not open file "Users/lawrencedlin/classes/msds691/hw/hw1/covid19.csv" for reading: No such file or directory
+HINT:  COPY FROM instructs the PostgreSQL server process to read a file. You may want a client-side facility such as psql's \copy.
+SQL state: 58P01
+2021-08-29 16:51:30,256: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6618156(Query-id: 6863866):
+Error Message:NOTICE:  table "country" does not exist, skipping
+NOTICE:  table "covid19" does not exist, skipping
+
+ERROR:  invalid input syntax for type integer: "1.0"
+CONTEXT:  COPY covid19, line 2, column new_cases: "1.0"
+SQL state: 22P02
+2021-08-29 16:51:43,670: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6618156(Query-id: 6298258):
+Error Message:NOTICE:  table "country" does not exist, skipping
+NOTICE:  table "covid19" does not exist, skipping
+
+ERROR:  invalid input syntax for type integer: "1.0"
+CONTEXT:  COPY covid19, line 29, column new_deaths: "1.0"
+SQL state: 22P02
+2021-08-29 16:51:51,036: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6618156(Query-id: 9332399):
+Error Message:NOTICE:  table "country" does not exist, skipping
+NOTICE:  table "covid19" does not exist, skipping
+
+ERROR:  invalid input syntax for type integer: "0.0"
+CONTEXT:  COPY covid19, line 366, column people_vaccinated: "0.0"
+SQL state: 22P02
+2021-08-29 16:52:05,901: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6618156(Query-id: 2264440):
+Error Message:NOTICE:  table "country" does not exist, skipping
+NOTICE:  table "covid19" does not exist, skipping
+
+ERROR:  duplicate key value violates unique constraint "covid19_iso_code_key"
+DETAIL:  Key (iso_code)=(AFG) already exists.
+CONTEXT:  COPY covid19, line 3
+SQL state: 23505
+2021-08-29 16:52:17,134: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6618156(Query-id: 2800791):
+Error Message:NOTICE:  table "country" does not exist, skipping
+NOTICE:  table "covid19" does not exist, skipping
+
+ERROR:  insert or update on table "country" violates foreign key constraint "country_iso_code_fkey"
+DETAIL:  Key (iso_code)=(AFG) is not present in table "covid19".
+SQL state: 23503
+2021-08-29 16:55:09,336: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6618156(Query-id: 3859309):
+Error Message:NOTICE:  table "country" does not exist, skipping
+NOTICE:  table "covid19" does not exist, skipping
+
+ERROR:  insert or update on table "country" violates foreign key constraint "country_iso_code_fkey"
+DETAIL:  Key (iso_code)=(AFG) is not present in table "covid19".
+SQL state: 23503
+2021-08-29 17:02:32,660: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6618156(Query-id: 7427977):
+Error Message:NOTICE:  table "country" does not exist, skipping
+NOTICE:  table "covid19" does not exist, skipping
+
+ERROR:  insert or update on table "country" violates foreign key constraint "country_iso_code_fkey"
+DETAIL:  Key (iso_code)=(AFG) is not present in table "covid19".
+SQL state: 23503
+2021-08-29 17:03:57,183: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6618156(Query-id: 7043020):
+Error Message:NOTICE:  table "country" does not exist, skipping
+NOTICE:  table "covid19" does not exist, skipping
+
+ERROR:  duplicate key value violates unique constraint "covid19_pkey"
+DETAIL:  Key (iso_code)=(AFG) already exists.
+CONTEXT:  COPY covid19, line 3
+SQL state: 23505
+2021-08-29 17:04:18,491: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6618156(Query-id: 4529049):
+Error Message:NOTICE:  table "country" does not exist, skipping
+NOTICE:  table "covid19" does not exist, skipping
+
+ERROR:  there is no unique constraint matching given keys for referenced table "covid19"
+SQL state: 42830
+2021-08-29 17:04:32,083: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6618156(Query-id: 6281695):
+Error Message:NOTICE:  table "country" does not exist, skipping
+NOTICE:  table "covid19" does not exist, skipping
+
+ERROR:  relation "country" does not exist
+SQL state: 42P01
+2021-08-29 17:04:43,758: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6618156(Query-id: 4738102):
+Error Message:NOTICE:  table "country" does not exist, skipping
+NOTICE:  table "covid19" does not exist, skipping
+
+ERROR:  there is no unique constraint matching given keys for referenced table "country"
+SQL state: 42830
+2021-08-29 17:08:29,352: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6618156(Query-id: 1370695):
+Error Message:ERROR:  cannot drop table country because other objects depend on it
+DETAIL:  constraint covid19_iso_code_fkey on table covid19 depends on table country
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+SQL state: 2BP01
+2021-08-29 17:08:41,351: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6618156(Query-id: 2299436):
+Error Message:ERROR:  cannot drop table country because other objects depend on it
+DETAIL:  constraint covid19_iso_code_fkey on table covid19 depends on table country
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+SQL state: 2BP01
+2021-08-29 17:08:53,366: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6618156(Query-id: 693365):
+Error Message:ERROR:  relation "country" already exists
+SQL state: 42P07
+2021-08-29 17:08:54,648: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6618156(Query-id: 4570095):
+Error Message:ERROR:  relation "country" already exists
+SQL state: 42P07
+2021-08-29 17:12:56,390: ERROR	pgadmin:	404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Applications/pgAdmin 4.app/Contents/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Applications/pgAdmin 4.app/Contents/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Applications/pgAdmin 4.app/Contents/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/helpers.py", line 1083, in send_static_file
+    return send_from_directory(
+  File "/Applications/pgAdmin 4.app/Contents/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/helpers.py", line 767, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2021-08-30 15:32:39,611: WARNING	werkzeug:	WebSocket transport not available. Install simple-websocket for improved performance.

@@ -1,0 +1,90 @@
+exit
+exit
+pwd
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd home
+ls
+ls
+ls
+cd ..
+ls
+cd ..
+cd ..
+ls
+cd usr
+ls
+cd ..
+ls
+exit
+echo $BASH_VERSION
+exit
+exit
+exit
+exit
+bash
+cat /etc/shells
+cd /opt/homebrew/bin
+ls
+ls *ash
+cd /usr/local/bin
+cd /usr/local
+ls
+which bash
+chsh -s "/opt/homebrew/bin/bash"
+/opt/homebrew/bin/bash
+chsh -s "/opt/homebrew/bin/bash" $USER
+who
+pkill -KILL -u lawrencedlin
+ls
+bash --version
+echo $BASH_VERSION
+eit
+echo $PATH
+conda
+vi ~/.profile
+brew
+vi ~/.bashrc
+source ~/.bashrc
+echo $PATH
+conda
+python3
+brew
+cat /etc/shells
+hyper
+echo $BASH
+brew info bash
+echo $BASH_VERSION
+source ~/.bashrc
+brew info bash
+hyper
+ls 
+ls
+echo $BASH_VERSION
+who
+whoami
+ls
+cat ~/.bashrc
+hyper --help
+hyper --version
+hyper version
+hyper help
+hyper -h
+hyper -h help
+hyper -h list
+hyper list
+hyper -h i
+hyper i
+hyper i hyper-blink
+hyper i hyper-spotify
+ls
+exit
+hyper
+hyper
+source ~/.bashrc
+hyper
