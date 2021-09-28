@@ -79,3 +79,15 @@ inoremap <Right> <ESC>:echoe "Use l"<CR>
 inoremap <Up>    <ESC>:echoe "Use k"<CR>
 inoremap <Down>  <ESC>:echoe "Use j"<CR>
 :syntax on
+" End of missing.csail.mit.edu vimrc options. My own custom settings
+" Autoindent for python programming
+set autoindent 
+" Set tabs to be 4 spaces see 
+" https://stackoverflow.com/questions/1878974/redefine-tab-as-4-spaces/38461002
+set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+" Keep cursor in the middle of screen always disable with au! VCenterCursor
+"augroup VCenterCursor
+"  au!
+"  au BufEnter,WinEnter,WinNew,VimResized *,*.*
+"        \ let &scrolloff=winheight(win_getid())/2
+"augroup END

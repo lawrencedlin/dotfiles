@@ -26,4 +26,27 @@ alias ls='ls -G'
 intelbrew='/usr/local/bin/brew'
 
 alias brew='/opt/homebrew/bin/brew'
-brew list > ~/dotfiles/brewlist.txt
+# This call to brew list is slowing down new shells significantly...Is there a way I can call this only once per day?
+# brew list > ~/dotfiles/brewlist.txt
+s=~/classes
+
+# Make shorthands for common flags
+alias ll="ls -lh"
+
+# Save a lot of typing for common commands
+alias gs="git status"
+alias gc="git commit"
+alias ga="git add"
+alias v="vim"
+
+# Save you from mistyping
+alias sl=ls
+
+# Overwrite existing commands for better defaults
+alias mv="mv -i"           # -i prompts before overwrite
+alias mkdir="mkdir -p"     # -p make parent dirs as needed
+alias df="df -h"           # -h prints human readable format
+
+# Alias can be composed
+alias la="ls -A"
+alias lla="la -l"

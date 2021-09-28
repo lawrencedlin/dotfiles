@@ -1,500 +1,638 @@
-psql -d postgres
-psql -d lawrencedlin
-psql -d
-psql -d msds691
-psql -f "../hw/hw1/HW1_extra.sql" -d msds691
-psql -d msds691
-sql
-psql
-psql
-psql -U lawrencedlin -d msds691
+vi intro.md
+jb build .
+vi intro.md
+jb build .
+vi intro.md
+jb build .
+vi intro.md
+jb build .
+vi intro.md
+jb build .
+vi intro.md
+vi intro.md
+jb build .
+vi intro.md
+jb build .
+vi intro.md
+jb build .
+vi intro.md
+vi _toc.yml
+vi _toc.yml
+vi _toc.yml
+fg
+jobs
+ps
+ps 15286
+fg 15286
+tldr fg
+fg %15286
+jobs
+vi _toc.yml
+ls -a
+rm ._toc.yml.swp
+vi _toc.yml
+clear
+jb build .
+vi _toc.yml
+jb build .
+vi intro.md
+jb build .
+vi intro.md
+jb build .
+vi intro.md
+jb build .
+vi intro.md
+vi intro.md
+jb build .
+vi intro.md
+jb build .
+vi intro.md
+jb build .
+vi intro.md
+jb build .
+ls ~/Downloads
+vi intro.md
+ls
+rm logo.png
+mv logo.pn.png logo.png
+jb build .
+ls
+cat _toc.yml
+vi viz.md
+jb build .
+vi viz.md
+jb build .
+vi viz.md
+jb build .
+vi viz.md
+cat _toc.yml
+vi viz.md
+jb build .
+vi viz.md
+jb build .
+vi viz.md
+vi intro.md
+jb build .
+vi intro.md
+vi viz.md
+vi intro.md
+jb build .
+vi intro.md
+jb build .
+ls
+git status
+git add *
+git commit --a -m "Update"
+git commit -a -m "Update"
+git push
+ls
+cat README.md
+:q
+ghp-import -n -p -f _build/html
+ls
+grep ghp README.md
+grep "*(ghp .*)`
+README.md
+"
+
+/
+grep "*(ghp .*)`" README.md
+`
+`
+'
+"
 ls
 ls
-psql -l
-pip install pypy
-cd ~/Documents
 ls
-cd textbooks
+cd undergrad
 ls
-open Python-Cookbook*
+unzip *.zip
 ls
-open Python-Cook*
-ls
-cd ~/Downloads
-ls
-unzip a-1.zip
-rm HW1.sql 
-rm Screen*.png
-rm *.zip
-ls
-cd ../../
-kls
-ls
-cd msds601
-ls
-ls
-cd lecnotes
-ls
-open L2*
-open L1*
 cd ..
 ls
-cd hw
+find -name *.zip
+cd undergrad
 ls
-open Home*.pdf
-open hw1.pdf
-cd ~/classes/msds691
+ls -al
 ls
-cd hw
-ls
-cd hw
-ls
-cd hw1
-ls
-cat HW1.sql
-cp HW1.sql HW1_extra.sql
-ls
-vi HW1.sql
-ls
-ls a.zip
-cd a.zip
-zip HW1.sql *.png a.zip
-zip a.zip HW1.sql *.png 
-ls
-cd ../../
-ls
-cd lecnotes
-ls
-open *.pdf
-cd ~/classes/msds692
-ls
-cd pipeline
-ls
-git pull
-cat results.txt
-ls -l
 cd ..
-man chmod
+cd grad
+ls
+unzip drive*.ziop
+unzip drive*.zip
+ls
+rm drive*
+ls
+rm -r drive*
+ls
+mv final* ../undergrad
+ls
 cd ..
-ls
-cd msds601
-ls
-cd hw
-open hw1.pdf
-ls
-open hw1.pdf
-cd ~/classes/msds601
-ls
-cd hw
-ls
-cd hw1.pdf
-open hw1.pdf
-cd ~/classes/msds692
-ls
-cd ~/data
-ls
-cd msds692
+cd undergrad
+cat ../_toc.yml
+mv final.md retail_forecast
+vi ../_toc.yml
 ls
 unzip *.zip
 ls
 rm *.zip
-cd reut*
+mv League_Final_Project.md lolwin.md
 ls
-cd ~/classes/msds692
+cd ..
+jb build .
 ls
-mkdir tfidf
-cd tfidf
+cd undergrad
+l
+ls
+vi lolwin.md
+ls
+ls retail_forecast.md
+cat retail_forecast
+cat retail_forecast.md
+rm retail_forecast.md
+ls
+mv retail_forecast retail_forecast.md
+cd ..
+jb build .
+ls
+cd undergrad
+ls
+cat retail_forecast.md
+cd ..
+vi _toc.ym
+vi _toc.yml
+cd undergrad
+ls
+ls
+vi lolwin.md
+ls
+vi retail_forecast.md
+ls
+cd ..
+ls
+vi _toc.yml
+jb build .
+ls
+cd _build/html
+ls
+cd undergrad
+ls
+unzip *.zip
+ls
+rm *.zip
+mv League* lolwin.html
+mv final.html retail_forecast.html
+cd ../../..
+jb build .
+ls
+cd undergrad
+ls
+cdLeague*
+ls
+cd League*
+ls
+cd *
+ls
+open Visualize%Log-1.png
+open Visualize\ Log-1.png
+cd ..
+cd..
+cd ..
+ls
+vi lolwin.md
+ls
+fg
+ls
+cd League*
+ls
+fg
+jb build ../../.
+ls
+cd figure-mark*
+ls
+mv * ../../league
+mkdir ../../league'
+mkdir ../../league
+mv * ../../league
+ls
+cd ..
+ls
+cd ..
+ls
+rm League_Final*
+rm -r League*
+ls
+mkdir retail
+mv final_files/*/* retail
+ls retail
+rm final_files
+rm -r final_files
+ls
+ls
+cd league
+ls
+cd ..
+ls;
+ls
+ls
+cat retail_forecast.md
+cd ..
+cd grad
+ls
+cd ..
+ls
+cd undergrad
+ls
+ls -al
+cd retail
+ls
+cd ..
+ls
+ls
+ls
+mv leaguemap* leaguemap.jpeg
+ls
+jb build ../.
+ls
+mv leaguemap.jpeg league
+vi lolwin.md
+jb build ../.
+ls
+vi lolwin.md
+jb build ../.
+ls
+cd league
+ls
+for f in * ; do mv "$f" $( echo $f | tr ' ' '-' ) ; done
+ls
+cd ..
+ls
+ls
+vi lolwin.md
+fg
+jb build ../.
+ls
+vi retail_forecast.md
+jb build ../.
+ls
+cd retail
+ls
+for f in *;do mv $f $(echo $f | tr ' ' '-'); done
+for f in *;do mv "$f" $(echo $f | tr ' ' '-'); done
+ls
+cd ..
+ls
+vi retail_forecast.md
+jb build ../.
+ls
+ls retail
+vi retail_forecast.md
+vi retail_forecast.md
+ls
+ls retail -al
+ls retail -l
+ls -l retail
+ls
+vi retail_forecast.md
+vi lolwin.md
+ls
+vi retail*.md
+jb build ../.
+vi retail*.md
+fg
+cd ..
+cd _build/html
+ls
+cd undergrad
+ls
+ls
+cd ..
+cd ../..
+ls
+vi _config.yml
+ls
+vi _config.yml
+ls
+cd undergrad
+ls
+cd retail
+ls
+cd ..
+ls
+wget https://raw.githubusercontent.com/lawrencedlin/RetailTimeSeries/main/LL-174-Final.md
+ls
+rm retail_forecast.md
+cd ..
+ls
+vi _toc.yml
+cd undergrad
+ls
+cd retail
+ls
+cd ..
+ls
+mkdir LL-174-Final_files
+cd LL*
+cd LL-174-Final_files
+mkdir figure-markdown_strict
+mv ../retail/* .
+ls
+mv *.png figure*
+ls
+cd ..
+ls
+rm retail
+rmdir retail
+ls
+jb build ../.
+ls
+vi LL-174*.md
+jb build ../.
+fg
+ls
+vi LL-174-Final.md
+jupyter notebook
+cd $s/msds601
+ls
+cd ..
+ls
+tree -d
+cd msds610
+ls
+open Lawrence*
+ls
+open *Week2*
+tldr ssh
+lw
+ls
+set -o v
+tldr set
+set -o vi
+lkdjfalf #
+man 7 signal
+man signal
+uptime
+cd ../msds692
+ls
+git clone https://github.com/USF-MSDS692/recommender-lawrencedlin.git
+git clone https://github.com/USF-MSDS692/sentiment-lawrencedlin.git
+cd ~/Documents/
+ls
+date >> meditations.txt
+ls
+vi med*
+vi med*
+set
+ls
+clear
+ls
+cd ~/classes/msds691
+ls
+cd hw
+ls
+ls
+unzip *.zip
+ls
+ls Assigned
+rm Assigned hw4
+mv Assigned hw4
+rm *.zip
+ls
+rm __MACOSX
+ls
+rmdir __MACOSX
+ls
+la __MACOSX
+ls __MACOSX
+rm -r __MACOSX
+ls
+cd hw4
+ls
+open *HW4*
+ls
+vi hw4.py
+fg
+python hw4.py
+cat output_1.txt
+fg
+python hw4.py
+cd ~/Documents
+ls
+rm mynewbook.
+rm -r mynewbook.
+lcd
+cd ~
+s
+ls
+cd dotfiles
+ls
+ls -a
+cd ..
+ls
+cd ..
+ls
+tldr find
+find . -name 'lawrencedlin.pem'
+find . -name 'lawrencedlin*'
+ssh -i ~/classes/lawrencedlin.cer 3.19.67.214
+ssh -i ~/classes/lawrencedlin.cer Ubuntu@3.19.67.214
+ssh -i "lawrencedlin.pem" ubuntu@ec2-3-19-67-214.us-east-2.compute.amazonaws.com
+ssh -i "lawrencedlin.cer" ubuntu@ec2-3-19-67-214.us-east-2.compute.amazonaws.com
+ssh -i "~/classes/lawrencedlin.cer" ubuntu@ec2-3-19-67-214.us-east-2.compute.amazonaws.com
+ssh -i "~/Documents/lawrencedlin.cer" ubuntu@ec2-13-57-179-148.us-west-1.compute.amazonaws.com
+ssh -i "/Users/lawrencedlin/Documents/lawrencedlin.cer" ubuntu@ec2-13-57-179-148.us-west-1.compute.amazonaws.com
+ssh -i "lawrencedlin.pem" ubuntu@ec2-13-57-179-148.us-west-1.compute.amazonaws.com
+ssh -i "/Users/lawrencedlin/Documents/lawrencedlin.cer" ubuntu@ec2-13-57-179-148.us-west-1.compute.amazonaws.com
+chmod 400 ~/Documents/lawrencedlin.cer
+ssh -i "/Users/lawrencedlin/Documents/lawrencedlin.cer" ubuntu@ec2-13-57-179-148.us-west-1.compute.amazonaws.com
+ssh -i /Users/lawrencedlin/Documents/lawrencedlin.cer ubuntu@ec2-13-57-179-148.us-west-1.compute.amazonaws.com
+ssh -i ~/Documents/lawrencedlin.cer ec2-user@ec2-54-177-68-46.us-west-1.compute.amazonaws.com
+cd ../hw/hw4
+ls
+diff output_2.txt <(python hw4.oy)
+diff output_2.txt <(python hw4.py)
+diff output_2.txt <(python hw4.py)
+diff output_2.txt <(python hw4.py)
+diff output_2.txt <(python hw4.py)
+diff output_2.txt <(python hw4.py)
+diff output_2.txt <(python hw4.py)
+cd ..
+cd ..
+ls
+cd lecnotes
+ls
+open *Week3*
+open *Week2*
+tldr ssh
+ssh student@msds691-week4.c7hpe3ryhnrg.us-west-1.rds.amazonaws.com
+cd ../..
+ls
+cd lecnotes
+ls
+open *Week4*
+open *Week4*
 ls
 cd ..
 ls
 cd 2021*
-ls
-mv * ../lecnotes
-ls
-cd ..
-ls
-rm 2021*
-cd lecnotes
-ls
-cd Week1
-ls
-cat Week1.sql
-psql -c 'SELECT * FROM covid19'
-psql -c 'SELECT * FROM covid19' -d msds691
-psql -U lawrencedlin -d msds691
-ls
-open *.pdf
-ls Data
-mv Data data
-ls
-ls data
-mv data Data
-tabview Data/epa_air*
-psql -d msds691
-ls
-cd ../hw
-unzip hw2.zip
-ls
-rm *.zip
-ls __M*
-ls __M*/Ass*
-ls Assigned
-cd __MACOSX
-ls
-cd Assigned
-ls
-cd ../../
-ls
-rm __MACOSX
-rm -r __MACOSX
-mv Assigned hw2
-cd ../lecnotes
-ls *2*
-open *Week2*
-pip install psycopg2
-ls
-ls
-git clone https://github.com/dianewoodbridge/2020-msds691-example.git
-ls
-rm -r Week1
-ls 2020*
-rm -r Data
-cd 2020*
-ls
-cd Week2
-ls
-cd ../../
+git pull
 ls
 cd ..
 ls
-cd ../msds601
+cd hw/hw4
+ls
+open hw4.py
+vi hw4.py
+cd /tmp
+vi file.txt
+cut file.txt
+tldr cut
+cut -d' ' file.txt
+cut -d' ' -f1- file.txt
+cut -d' ' -f1 file.txt
+cut -d' ' -f1 file.txt
+cut -d' ' -f1 file.txt
+ls
+cd $s/msds601
 ls
 cd hw
-open hw1.pdf
-cd ~/classes/msds601/hw
 ls
-jupyter notebook
-cd ../lecnores
+open *4*
+cd ~/data/msds692
 ls
-cd ..
+rm bbc*
 ls
+rm -r bbc
+unzip *.zip
 ls
-echo $PATH
-echo '$PATH'
-echo "$PATH"
-mkdir /tmp/missing
-man touch
-touch /tmp/missing/semester
-vi /tmp/missing/semester
-exercise='/tmp/missing/semester'
-cat exercise
-cat $exercise
-ls /bin
-ls /
-ls /bin/sh
-tree /bin/sh
-./$exercise
-.$exercise
-./tmp/missing/semester
-ls /tmp/missing
-$exercise
-chmod -x $exercise
-/bin/bash $exercise
+unzip bbc*.zip
 ls
+rm bbc-f*.zip
+cd bbc
 ls
-cat $exercise | grep "Last-Modified" > /tmp/missing/last-modified.txt
-cat /tmp/missing/last-modifie*
-cat $exercise | grep "Last-Modified" 
-cat $exercise
-$exercise
-chmod -x $exercise
-$exercise
-ls -l $exercise
-man chmod
-chmod +x $exercise
-cat $exercise | grep "Last-Modified" > /tmp/missing/last-modified.txt
-cat /tmp/missing/last-modified.txt
-ls -l $exercise
-cat $exercise
-$exercise
-$exercise | grep "Last-Modifie" > /tmp/missing/last-modified.txt
-cat /tmp/missing/last-modified.txt
-cat /tmp/missing/last-modified.txt
-echo cat /tmp/missing/last-modified.txt
-echo "echo cat /tmp/missing/last-modified.txt"
-echo "heello world
-"
-echo "heello world
-"
-"heello world
-"
-false
-echo flase
-echo false
-false || echo "Oops, fail"
-for file in $(ls); echo
-for file in $(ls); echo file
-for file in $(ls); echo $file
-for file in $(ls); echo $file;
-$(date)
-$(date)
-echo "$(date)"
-date
-cal
-for file in "$@";do grep foobar "$file" > /dev/null 2>/dev/null ;
-for file in "$@";do grep foobar "$file" > /dev/null 2>/dev/null ;done
-echo "HEllo" 1> /tmp/text.txt
-cat /tmp/text.txt
-pip install tldr
-tldr chmod
+cd business
+ls
+cat 001.txt
+cat 002.txt
+cd ../..
+ls
+unzip glove*.zip
+ls -a
+ls -l
 tldr ls
 ls -lh
-tldr find
-brew install ripgrep
-tldr rg
-rg "python"
-history
-history | rg find
-brew install fasd
+unzip glove*.zip
+rm glove*.zip
+unzip glove*.zip
 ls
-cd ~/Documents
-z docs
-z
-fasd
-tldr fasd
-man fasd
-z
-fasd z
-fasd z Doc
-cd ~/data
-fasd z doc
-fasd z Doc
-fasd z ~/Doc
-tldr ls
-ls -a
-ls -1
-ls -1ah
-ls -ah
-ls -lah
-ls -lahtr
-man ls
-ls -lahtrG
-vi /tmp/marco.sh
-source /tmp/marco.sh
-/bin
-ls /bin
-vi /tmp/marco.sh
-source /tmp/marco.sh
-vi /tmp/marco.sh
-source /tmp/marco.sh
-ls
-marco
-vi /tmp/marco.sh
-source /tmp/marco.sh
-marco
-vi /tmp/marco.sh
-source /tmp/marco.sh
-marco
-polo
-cd /
-polo
-RANDOM
-RANDOM % 100
-if [[true]]; then echo "Yes"; fi
-if [["true]]; then echo "Yes"; fi
-
-;
-/
-"; "
-
-cd ~/classes/msds691
-ls
-cd ../msds692
-ls
-cd search
-ls
-cat htable.py
-ls
-cat test_htable.py
-clear
-ls -l
-man ls
-tldr ls
-clearn
-clear
-history
-clear
-ls
-ripgrep
-rg
-rg ".py"
-rg "words()"
-rg words()
-rg words\(\)
-tldr rg
-man ls
-tldr ls
-rg python
-rg words
-clear
-date
-cd ..
-ls
-cd inclass
-curl https://raw.githubusercontent.com/parrt/msds692/master/notes/html.ipynb
-ls
-curl https://raw.githubusercontent.com/parrt/msds692/master/notes/html.ipynb html.ipynb
-curl https://raw.githubusercontent.com/parrt/msds692/master/notes/html.ipynb 
-curl https://raw.githubusercontent.com/parrt/msds692/master/notes/html.ipynb > html.ipynb
-ls
-jupyter notebook html.ipynb
-mv TeslaIPO.html /tmp
-ls
-cd TeslaIPO_files
-ls
-cd ..
-ls
-rm Tesla*
-vi /tmp/ipo-text.py
-python /tmp/ipo-text.py
-vi /tmp/ipo-text.py
-$_
-tldr uniq
-tldr sort
-tldr tr
-python /tmp/ipo-text.py | tr "[:space:]" "[:\n]" | uniq -c
-clear
-log
-log show
-cd ~/classes/msds692
-ls
-cd inclass
-wget https://raw.githubusercontent.com/parrt/msds692/master/notes/sfpd-wordcloud.ipynb
-jupyter notebook sfpd*
-pip install wordcloud
-brew list
-which brew
-echo intelbrew
-echo $intelbrew
-vi ~/.bash_profile
-vi /tmp/catcloud.py
-python $_
-python $_ /tmp/SFPD.csv
-vi /tmp/catcloud.py
-python $_ /tmp/SFPD.csv
-vi /tmp/catcloud.py
-python $_ /tmp/SFPD.csv
-vi /tmp/catcloud.py
-python $_ /tmp/SFPD.csv
-cp /tmp/catcloud.py /tmp/hoodcloud.py
-vi /tmp/hoodcloud.py
-tldr tr
-tr 'Incident Description' 'Police District' < /tmp/hoodlcloud/py
-tr 'Incident Description' 'Police District' < /tmp/hoodlcloud.py
-tr 'Incident Description' 'Police District' < /tmp/hoodcloud.py
-tr '[Incident Description]' '[Police District]' < /tmp/hoodcloud.py
-sed -i "/s/Incident Description/Police District/g" /tmp/hoodcloud.py
-sed -i '/s/Incident Description/Police District/g' /tmp/hoodcloud.py
-sed -i '/s/"Incident Description"/"Police District"/g' /tmp/hoodcloud.py
-tldr sed
-sed -i '' '/s/"Incident Description"/"Police District"/g' /tmp/hoodcloud.py
-sed -i '' '/s/Incident Description/Police District/g' /tmp/hoodcloud.py
-cat /tmp/hoodcloud.py
-vi /tmp/hoodcloud.py
-cat /tmp/hoodcloud.py
-python /tmp/hoodcloud.py
-python /tmp/hoodcloud.py /tmp/SFPD.csv
-vi /tmp/catcloud.py
-ls
-wget https://raw.githubusercontent.com/parrt/msds692/master/notes/bashcsv.ipynb
-pip install -v csvkit
-brew list
-which brew
-grep 'Annie Cyprus' SampleSuperstoreSales.csv
-ls
-
-grep 'Annie Cyprus' SampleSuperstoreSales.csvgrep 'Annie Cyprus' SampleSuperstoreSales.cgrep 'Annie Cyprus' SampleSuperstoreSales.cgrep 'Annie Cyprus' SampleSuperstoreSales.cgrep 'Annie Cyprus' SampleSuperstoreSales.c
-grep 'Annie Cyprus' SampleSuperstoreSales.csvgrep 'Annie Cyprus' SampleSuperstoreSales.c
-grep 'Annie Cyprus' 'Sample - Superstore.xls'
-tldr wget
-curl https://raw.githubusercontent.com/parrt/msds692/master/data/SampleSuperstoreSales.csv > /data/SampleSuperstoreSales.csv
-vi /tmp/exercise
-vi /tmp/debug
-ls /tmp
-cat /tmp/debug
-/tmp/debug
-chmod +x /tmp/debug
-/tmp/debug
-vi /tmp/debug
-/tmp/debug
-vi /tmp/debug
-ls -r
-tldr ls
-tldr find
-find . -name '*.html'
-ls
-cd /tmp
-ls
-find . -name '*.html'
-find . -name '*.html' | xargs zip html.zip
-ls
-tldr xargs
-man xargs
-tldr find
-man find
-tldr stat
-man stat
-ls
-rm *
-ls
-vi practice.txt
-cd ~/classses
-cd ~/classes
-ls
-cat PAT.txt
-cd msds692
-ls
-cd search
-ls
-cp *.py /tmp
-cd /tmp
-ls
-vi search.py
-clear
-ls -a ~
-mv vimrc .vimrc
-ls vimrc
-cat vimrc
-ls
+rm glove*.zip
 cd ~
-ls vimrc
-cat vimr
-cat vimrc
-source ~/.vimrc
 ls
-mv vimrc .vimrc
-ls
-source ~/.vimrc
-tldr source
-vi /tmp/example
-ls /tmp
-mkdir ~/.vim/pack/vendor/start/
-ls
-mkdir ~/.vim/pack/vendor/start
+cd lawrencedlin
 ls -a
-mkdir .vim
+find . -name *.ssh*
+cd .ssh
 ls
-mkdir .vim/pack
-mkdir .vim/pack/vendor
-mkdir .vim/pack/vendor/start
-vi /tmp/temp/py
-vi /tmp/temp.py
-cd ~/.vim/pack/vendor/start
-git clone https://github.com/preservim/nerdtree.git
-vi /tmp/temp.py
-git clone https://github.com/kien/ctrlp.vim.git
+cat github_ssh.pub
+cat github_ssh
+cd ..
 ls
-git clone https://github.com/vim-syntastic/syntastic.git
-vi /tmp/temp.py
-echo ':syntax on' >> ~/.vimrc
-vi /tmp/temp.py
+ls
+ls -a
+ls .ssh
+cd dotfiles
+ls
+ls -a
+eval "$(ssh-agent -s)"
+touch ~/.ssh/config
+vi ~/.ssh/config
+ssh-add -K ~/.ssh/github_ssh
+tldr pbcopy
+pbcopy < pbcopy < ~/.ssh/github_ssh
+pbcopy < ~/.ssh/github_ssh
+pbcopy < ~/.ssh/github_ssh.pub
+chmod 700 ~/.ssh
+cd ..
+ls -al
+cd .ssh
+ls
+ls -al
+ssh -T git@github.com
+ssh-keygen -t ed25519 -C "lawrencedlin@gmail.com"
+ls
+rm github_ssh*
+ls
+eval "$(ssh-agent -s)"
+ssh-add -K ~/.ssh/id_ed25519
+pbcopy < id_ed25519.pub
+ssh -T git@github.com
+cd $s/msds692/recomm*
+ls
+unzip *.zip
+ls
+rm *.zip
+tree -d ~/data/oldclasses/msds501
+tree -d ~/data/oldclasses/
+cd ..
+ls
+cd ..
+ls
+cd tfidf
+ls
+cd tfidf
+ls
+cd msds692/tfidf
+ls
+cat tfidf.py
+ls
+cat common.py
+ls
+cd ..
+ls
+cd search
+ls
+cat words.py
+cd ../reco*
+unzip *.zip
+rm *zip
+ls
+cd templatew
+cd templates
+cat *
+cd ..
+cd ..
+ls
+cd search
+ls
+cat words.py
+cd ../rec*
+ls
+cat test_server.py
+git status
+git add *.txt *.py *.pkl
+git add templates/
+ls
+git status
+git commit -a -m "Initial commit with completed doc2vec.py"
+git push
+$ ssh-keygen -t ed25519 -C lawrencedlin@gmail.com
+ssh-keygen -t ed25519 -C lawrencedlin@gmail.com
+ls
+ls ~/Documents
+ls ~/Documents -a
+ls -al  ~/Documents 
+git push
+git push
+git push
+git push
+git remote set-url origin git@github.com:USF-MSDS692/recommender-lawrencedlin.git
+git push
+ssh -i "~/Documents/lawrencedlin.cer" ubuntu@ec2-54-177-111-7.us-west-1.compute.amazonaws.com
+vi tmp
+cat tmp
+ls
+rm tmp
+ls
+'
+
+'
