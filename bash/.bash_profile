@@ -1,3 +1,5 @@
+# Maybe run a script that scrapes a daily quote of the day and prints to stdout
+# echo "Welcome back, Lawrence!"
 export PATH="$PATH:/opt/homebrew/bin/:/opt/homebrew/anaconda3/bin/"
 
 # >>> conda initialize >>>
@@ -18,7 +20,15 @@ unset __conda_setup
 parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
-export PS1="$CONDA_PROMPT_MODIFIER\$(parse_git_branch) [\[$(tput sgr0)\]\[\033[38;5;27m\]\H\[$(tput sgr0)\]] \[$(tput sgr0)\]\[\033[38;5;47m\]\w\[$(tput sgr0)\] \\$ \[$(tput sgr0)\]"
+# With conda prompt
+# PS1="\$? $CONDA_PROMPT_MODIFIER\$(parse_git_branch) \[$(tput sgr0)\]\[\033[31m\]\u@\[\033[38;5;27m\]\h\[$(tput sgr0)\] \[$(tput sgr0)\]in \[\033[38;5;47m\]\w\[$(tput sgr0)\] $(printf '\[$(tput setaf 3)\]\u26a1\[$(tput sgr0)\]')"
+# Fix this so the prompt doesnt disappear
+# PS1+="\n$(printf '\[$(tput setaf 3)\]\u26a1\[$(tput sgr0)\]')"
+
+# Without conda prompt
+PS1="\[$(tput setaf 6)\]\$? $(parse_git_branch) \[$(tput sgr0)\]\[\033[31m\]\u@\[\033[38;5;27m\]\h\[$(tput sgr0)\] \[$(tput sgr0)\]in \[\033[38;5;47m\]\w\[$(tput sgr0)\] $(printf '\[$(tput setaf 3)\]\u26a1\[$(tput sgr0)\]')"
+
+export PS1
 
 export LSCOLORS=Eafxcxdxbxegedabagacad
 alias ls='ls -G'
@@ -28,7 +38,7 @@ intelbrew='/usr/local/bin/brew'
 alias brew='/opt/homebrew/bin/brew'
 # This call to brew list is slowing down new shells significantly...Is there a way I can call this only once per day?
 # brew list > ~/dotfiles/brewlist.txt
-s=~/classes
+alias s="cd ~/classes"
 
 # Make shorthands for common flags
 alias ll="ls -lh"
@@ -50,3 +60,11 @@ alias df="df -h"           # -h prints human readable format
 # Alias can be composed
 alias la="ls -A"
 alias lla="la -l"
+
+# Changes starting pos of cursor
+# tput cup 15 8
+
+# Terminal size, may be handy to create a evil shell function later that puts prompt somewhere weird
+alias term_size='echo "Rows=$(tput lines) Cols=$(tput cols)"'
+
+
