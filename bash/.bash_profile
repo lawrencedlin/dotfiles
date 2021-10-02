@@ -23,10 +23,10 @@ parse_git_branch() {
 # With conda prompt
 # PS1="\$? $CONDA_PROMPT_MODIFIER\$(parse_git_branch) \[$(tput sgr0)\]\[\033[31m\]\u@\[\033[38;5;27m\]\h\[$(tput sgr0)\] \[$(tput sgr0)\]in \[\033[38;5;47m\]\w\[$(tput sgr0)\] $(printf '\[$(tput setaf 3)\]\u26a1\[$(tput sgr0)\]')"
 # Fix this so the prompt doesnt disappear
-# PS1+="\n$(printf '\[$(tput setaf 3)\]\u26a1\[$(tput sgr0)\]')"
 
 # Without conda prompt
-PS1="\[$(tput setaf 6)\]\$? $(parse_git_branch) \[$(tput sgr0)\]\[\033[31m\]\u\[$(tput sgr0)\]@\[\033[38;5;27m\]\h\[$(tput sgr0)\] \[$(tput sgr0)\]in \[\033[38;5;47m\]\w\[$(tput sgr0)\]"
+PS1="\[$(tput setaf 6)\]\$?$(parse_git_branch) \[$(tput sgr0)\]\[\033[31m\]\u\[$(tput sgr0)\]@\[\033[38;5;27m\]\h\[$(tput sgr0)\] \[$(tput sgr0)\]in \[\033[38;5;47m\]\w\[$(tput sgr0)\]"
+# PS1+="\n$(printf '\[$(tput setaf 3)\]\u26a1\[$(tput sgr0)\]')"
 PS1+="\n\$ "
 
 export PS1
@@ -39,7 +39,11 @@ intelbrew='/usr/local/bin/brew'
 alias brew='/opt/homebrew/bin/brew'
 # This call to brew list is slowing down new shells significantly...Is there a way I can call this only once per day?
 # brew list > ~/dotfiles/brewlist.txt
+
+# Classes directory
 alias s="cd ~/classes"
+# Terence's class directory: Change every module
+alias t="cd ~/classes/msds692"
 
 # Make shorthands for common flags
 alias ll="ls -lh"
