@@ -42,8 +42,12 @@ alias brew='/opt/homebrew/bin/brew'
 
 # Classes directory
 alias s="cd ~/classes"
-# Terence's class directory: Change every module
-alias t="cd ~/classes/msds692"
+# Alias for class folders
+alias ml="cd ~/classes/msds621"
+alias mllab="cd ~/classes/msds699"
+alias ts="cd ~/classes/msds604"
+alias dc="cd ~/classes/msds694"
+alias dl="cd ~/classes/dl-certificate"
 
 # Make shorthands for common flags
 alias ll="ls -lh"
@@ -52,7 +56,7 @@ alias ll="ls -lh"
 alias gs="git status"
 alias gc="git commit"
 alias ga="git add"
-alias v="vim"
+alias v="vi"
 
 # Save you from mistyping
 alias sl=ls
@@ -73,3 +77,8 @@ alias lla="la -l"
 alias term_size='echo "Rows=$(tput lines) Cols=$(tput cols)"'
 
 
+# Vim with python support, default would be /usr/bin/vim with no python support
+alias vi="/opt/homebrew/Cellar/vim/8.2.3450/bin/vim"
+alias d="cd ~/Documents"
+alias j="date >> ~/Documents/meditations.txt && vi ~/Documents/meditations.txt" # my journal
+export PYTHONBREAKPIONT="ipdb.set_trace"

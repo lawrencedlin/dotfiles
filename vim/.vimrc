@@ -91,3 +91,37 @@ set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 "  au BufEnter,WinEnter,WinNew,VimResized *,*.*
 "        \ let &scrolloff=winheight(win_getid())/2
 "augroup END
+
+" Set column at 88, black code formatter default
+set cc=88
+" Set color of colorcolumn
+highlight ColorColumn ctermbg=0 guibg=darkgreen
+
+" Highlight cursor line
+set cursorline
+
+" Remove the underline from enabling cursorline:
+highlight clear CursorLine
+
+" Remove the underline from enabling cursorline:
+"highlight clear CursorLine
+hi CursorLine term=bold cterm=bold guibg=Grey40 
+
+" Set line numbering to red background:
+hi CursorLineNr   term=bold ctermfg=Yellow gui=bold guifg=Yellow
+
+" Pathogen package manager
+execute pathogen#infect()
+
+" Disable jedi autopopup on typing a dot
+let g:jedi#popup_on_dot = 0
+" Show call sign on vim command line show mode must be disabled for this
+let g:jedi#show_call_signatures = 0
+"set noshowmode
+
+" Make supertab use jedi-vim autocomplete when editing python files
+let g:SuperTabDefaultCompletionType = "context"
+
+
+
+
