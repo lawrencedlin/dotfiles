@@ -8,6 +8,7 @@
     ~/.vim: vim/.vim
     ~/.vimrc: vim/.vimrc
     ~/.bash_profile: bash/.bash_profile
+    ~/.profile: sh/.profile
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
