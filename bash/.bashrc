@@ -62,13 +62,29 @@ alias v="vi"
 alias j="date >> ~/Documents/meditations.txt && vi ~/Documents/meditations.txt" # my journal
 
 # ---------- LOCAL CONFIG----------
-if [ -d .bashrc_local ]; then
-source .bashrc_local
+if [ -e ~/.bashrc_local ]; then
+    source ~/.bashrc_local
 fi
 
 aws_keys='.aws_access_keys'
-if [ -d ${aws_keys} ]; then
+if [ -e ${aws_keys} ]; then
     source ${aws_keys}
 fi
 
 conda init > /dev/null
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/u/users/l0l0cp1/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/u/users/l0l0cp1/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/u/users/l0l0cp1/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/u/users/l0l0cp1/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
