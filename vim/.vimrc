@@ -145,7 +145,7 @@ set noswapfile
 "  Increase undo limit
 set history=1000
 " Spellcheck
-set spell
+" set spell
 " Don't redraw while executing macros (good performance config)
 set lazyredraw
 
