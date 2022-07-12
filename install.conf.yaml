@@ -6,7 +6,7 @@
 
 - link:
     ~/.vim: vim/.vim
-    ~/.vimrc: vimrc/.vimrc
+    ~/.vimrc: vim/.vimrc
     ~/.bash_profile: bash/.bash_profile
 
 - shell:
