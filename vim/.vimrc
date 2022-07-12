@@ -44,14 +44,17 @@ set backspace=indent,eol,start
 " for more information on this.
 set hidden
 
+" ---------- Search Options----------
 " This setting makes search case-insensitive when all characters in the string
 " being searched are lowercase. However, the search becomes case-sensitive if
 " it contains any capital letters. This makes searching more convenient.
 set ignorecase
 set smartcase
-
+" Enable search highlighting
+set hlsearch
 " Enable searching as you type, rather than waiting till you press enter.
 set incsearch
+
 
 " Unbind some useless/annoying default key bindings.
 nmap Q <Nop> " 'Q' in normal mode enters Ex mode. You almost never want this.
@@ -80,11 +83,14 @@ inoremap <Up>    <ESC>:echoe "Use k"<CR>
 inoremap <Down>  <ESC>:echoe "Use j"<CR>
 :syntax on
 " End of missing.csail.mit.edu vimrc options. My own custom settings
-" Autoindent for python programming
+" ---------- Indentation Settings ----------
+" New lines inherit indentation of previous line
 set autoindent 
 " Set tabs to be 4 spaces see 
 " https://stackoverflow.com/questions/1878974/redefine-tab-as-4-spaces/38461002
-set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
+" When shifting lines, round indentation to nearest multiple of shiftwidth
+set shiftround
 " Keep cursor in the middle of screen always disable with au! VCenterCursor
 "augroup VCenterCursor
 "  au!
@@ -92,6 +98,7 @@ set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 "        \ let &scrolloff=winheight(win_getid())/2
 "augroup END
 
+" ---------- UI Options----------
 " Set column at 88, black code formatter default
 set cc=88
 " Set color of colorcolumn
@@ -110,6 +117,39 @@ hi CursorLine term=bold cterm=bold guibg=Grey40
 " Set line numbering to red background:
 hi CursorLineNr   term=bold ctermfg=Yellow gui=bold guifg=Yellow
 
+" Set window title to filename
+set titlestring=%t
+set title
+
+" Always show cursor pos
+set ruler
+
+" Display command line tab autocomplete as menu
+set wildmenu
+set wildmode=list:longest
+set wildignore=*.o,*~,*.pyc
+
+" Show matching brackets when text indicator is over them
+set showmatch
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Files, backups and undo
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" " Turn backup off, since most stuff is in SVN, git etc. anyway...
+set nobackup
+set nowb
+set noswapfile
+
+
+" ---------- MISC ----------
+"  Increase undo limit
+set history=1000
+" Spellcheck
+set spell
+" Don't redraw while executing macros (good performance config)
+set lazyredraw
+
+" ---------- PLUGINS  ----------
 " Pathogen package manager
 execute pathogen#infect()
 
