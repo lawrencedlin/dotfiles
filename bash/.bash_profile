@@ -1,6 +1,7 @@
 # Maybe run a script that scrapes a daily quote of the day and prints to stdout
 # echo "Welcome back, Lawrence!"
 export PATH="$PATH:/opt/homebrew/bin/:/opt/homebrew/anaconda3/bin/"
+export PATH="/Users/lawrencedlin/.ebcli-virtual-env/executables:$PATH"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -36,15 +37,12 @@ alias ls='ls -G'
 # Brew for intel chip and Brew for M1
 alias intelbrew='/usr/local/bin/brew'
 
-alias brew='/opt/homebrew/bin/brew'
+# alias brew='/opt/homebrew/bin/brew'
 # This call to brew list is slowing down new shells significantly...Is there a way I can call this only once per day?
 # brew list > ~/dotfiles/brewlist.txt
 
 # Classes directory
 alias s="cd ~/classes"
-# Alias for class folders
-alias dd="cd ~/classes/msds697_distributed_data_systems_2022"
-alias ml="cd ~/classes/msds630"
 
 # Make shorthands for common flags
 alias ll="ls -lh"
@@ -78,9 +76,10 @@ alias term_size='echo "Rows=$(tput lines) Cols=$(tput cols)"'
 alias vi="/opt/homebrew/Cellar/vim/*/bin/vim"
 alias d="cd ~/Documents"
 alias j="date >> ~/Documents/meditations.txt && vi ~/Documents/meditations.txt" # my journal
+aws_keys='.aws_access_keys'
+if [ -d ${aws_keys} ]; then
+    source ${aws_keys}
+fi
 export PYTHONBREAKPOINT="ipdb.set_trace"
-export AWS_ACCESS_KEY_ID="AKIAUJEHLSMP3QJ4AYPW"
-export AWS_SECRET_ACCESS_KEY="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"
 eval "$(thefuck --alias)"
-export PATH="/Users/lawrencedlin/.ebcli-virtual-env/executables:$PATH"
 cdls() { cd "$@" && ls; }
