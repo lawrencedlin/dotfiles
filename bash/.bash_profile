@@ -1,9 +1,20 @@
 #!/bin/bash
+# ---------- INITIALIZATION ----------
 echo "reading ${BASH_SOURCE[0]}"
-# echo "Welcome back, Lawrence!"
-export PATH="$PATH:/opt/homebrew/bin/:/opt/homebrew/anaconda3/bin/:${HOME}/scripts"
 conda init bash > /dev/null
-# export PATH="/Users/lawrencedlin/.ebcli-virtual-env/executables:$PATH"
+
+# ---------- FUNCTIONS ----------
+
+cdls() { cd "$@" && ls; }
+
+parse_git_branch() {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+# ---------- ENV VARIABLES ----------
+export PYTHONBREAKPOINT="ipdb.set_trace"
+export LSCOLORS=Eafxcxdxbxegedabagacad
+export PATH="$PATH:/opt/homebrew/bin/:/opt/homebrew/anaconda3/bin/:${HOME}/scripts"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -20,21 +31,15 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-parse_git_branch() {
-    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}
-# With conda prompt
-# PS1="\$? $CONDA_PROMPT_MODIFIER\$(parse_git_branch) \[$(tput sgr0)\]\[\033[31m\]\u@\[\033[38;5;27m\]\h\[$(tput sgr0)\] \[$(tput sgr0)\]in \[\033[38;5;47m\]\w\[$(tput sgr0)\] $(printf '\[$(tput setaf 3)\]\u26a1\[$(tput sgr0)\]')"
-# Fix this so the prompt doesnt disappear
-
-# Without conda prompt
+# ---------- PROMPT ----------
 PS1="\[$(tput setaf 6)\]\$?$(parse_git_branch) \[$(tput sgr0)\]\[\033[31m\]\u\[$(tput sgr0)\]@\[\033[38;5;27m\]\h\[$(tput sgr0)\] \[$(tput sgr0)\]in \[\033[38;5;47m\]\w\[$(tput sgr0)\]"
 # PS1+="\n$(printf '\[$(tput setaf 3)\]\u26a1\[$(tput sgr0)\]')"
 PS1+="\n\$ "
 
 export PS1
 
-export LSCOLORS=Eafxcxdxbxegedabagacad
+
+# ---------- ALIASES ----------
 alias ls='ls -G'
 # Brew for intel chip and Brew for M1
 alias intelbrew='/usr/local/bin/brew'
@@ -67,19 +72,20 @@ alias lla="la -l"
 # Terminal size, may be handy to create a evil shell function later that puts prompt somewhere weird
 alias term_size='echo "Rows=$(tput lines) Cols=$(tput cols)"'
 
-
 # Vim with python support, default would be /usr/bin/vim with no python support
 alias vi="vim"
 alias v="vi"
 alias j="date >> ~/Documents/meditations.txt && vi ~/Documents/meditations.txt" # my journal
+
+# ---------- LOCAL CONFIG----------
+if [ -d .bash_profile_local ]; then
+source .ien_profile
+fi
+
 aws_keys='.aws_access_keys'
 if [ -d ${aws_keys} ]; then
     source ${aws_keys}
 fi
-export PYTHONBREAKPOINT="ipdb.set_trace"
-cdls() { cd "$@" && ls; }
 
-# Local machine specific config
-if [ -d .bash_profile_local ]; then
-source .ien_profile
-fi
+source .bash_profile
+
