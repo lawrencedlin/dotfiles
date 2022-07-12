@@ -1,4 +1,3 @@
 echo 'reading .profile'
-bash
 
 

@@ -8,6 +8,7 @@
     ~/.vim: vim/.vim
     ~/.vimrc: vim/.vimrc
     ~/.bash_profile: bash/.bash_profile
+    ~/.bashrc: bash/.bashrc
     ~/.profile: sh/.profile
 
 - shell:
