@@ -34,7 +34,7 @@ export PS1
 export LSCOLORS=Eafxcxdxbxegedabagacad
 alias ls='ls -G'
 # Brew for intel chip and Brew for M1
-intelbrew='/usr/local/bin/brew'
+alias intelbrew='/usr/local/bin/brew'
 
 alias brew='/opt/homebrew/bin/brew'
 # This call to brew list is slowing down new shells significantly...Is there a way I can call this only once per day?
@@ -43,11 +43,8 @@ alias brew='/opt/homebrew/bin/brew'
 # Classes directory
 alias s="cd ~/classes"
 # Alias for class folders
-alias ml="cd ~/classes/msds621"
-alias mllab="cd ~/classes/msds699"
-alias ts="cd ~/classes/msds604"
-alias dc="cd ~/classes/msds694"
-alias dl="cd ~/classes/dl-certificate"
+alias dd="cd ~/classes/msds697_distributed_data_systems_2022"
+alias ml="cd ~/classes/msds630"
 
 # Make shorthands for common flags
 alias ll="ls -lh"
@@ -78,7 +75,12 @@ alias term_size='echo "Rows=$(tput lines) Cols=$(tput cols)"'
 
 
 # Vim with python support, default would be /usr/bin/vim with no python support
-alias vi="/opt/homebrew/Cellar/vim/8.2.3450/bin/vim"
+alias vi="/opt/homebrew/Cellar/vim/*/bin/vim"
 alias d="cd ~/Documents"
 alias j="date >> ~/Documents/meditations.txt && vi ~/Documents/meditations.txt" # my journal
-export PYTHONBREAKPIONT="ipdb.set_trace"
+export PYTHONBREAKPOINT="ipdb.set_trace"
+export AWS_ACCESS_KEY_ID="AKIAUJEHLSMP3QJ4AYPW"
+export AWS_SECRET_ACCESS_KEY="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"
+eval "$(thefuck --alias)"
+export PATH="/Users/lawrencedlin/.ebcli-virtual-env/executables:$PATH"
+cdls() { cd "$@" && ls; }

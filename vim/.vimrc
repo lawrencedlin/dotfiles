@@ -122,6 +122,17 @@ let g:jedi#show_call_signatures = 0
 " Make supertab use jedi-vim autocomplete when editing python files
 let g:SuperTabDefaultCompletionType = "context"
 
+" Syntastic defaults
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
+" Run syntastic with Ctrl-w-e
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
+nnoremap <C-w>E :SyntasticCheck<CR>
 
