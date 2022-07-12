@@ -54,13 +54,14 @@ set smartcase
 set hlsearch
 " Enable searching as you type, rather than waiting till you press enter.
 set incsearch
+" Extended regex
+set magic
 
+" ---------- Keys ----------
+set nostartofline               " Make j/k respect the columns
 
 " Unbind some useless/annoying default key bindings.
 nmap Q <Nop> " 'Q' in normal mode enters Ex mode. You almost never want this.
-
-" Disable audible bell because it's annoying.
-set noerrorbells visualbell t_vb=
 
 " Enable mouse support. You should avoid relying on this too much, but it can
 " sometimes be convenient.
@@ -102,7 +103,7 @@ set shiftround
 " Set column at 88, black code formatter default
 set cc=88
 " Set color of colorcolumn
-highlight ColorColumn ctermbg=0 guibg=darkgreen
+highlight ColorColumn ctermbg=0 
 
 " Highlight cursor line
 set cursorline
@@ -112,10 +113,12 @@ highlight clear CursorLine
 
 " Remove the underline from enabling cursorline:
 "highlight clear CursorLine
-hi CursorLine term=bold cterm=bold guibg=Grey40 
+" hi CursorLine term=bold cterm=bold guibg=Grey40 
+hi CursorLine term=bold cterm=bold 
 
 " Set line numbering to red background:
-hi CursorLineNr   term=bold ctermfg=Yellow gui=bold guifg=Yellow
+" hi CursorLineNr   term=bold ctermfg=Yellow gui=bold guifg=Yellow
+hi CursorLineNr term=bold gui=bold 
 
 " Set window title to filename
 set titlestring=%t
@@ -130,7 +133,7 @@ set wildmode=list:longest
 set wildignore=*.o,*~,*.pyc
 
 " Show matching brackets when text indicator is over them
-set showmatch
+set showmatch matchtime=3
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
@@ -139,6 +142,9 @@ set showmatch
 set nobackup
 set nowb
 set noswapfile
+" Local dirs (centralize everything)
+set backupdir=~/.vim/backups
+set directory=~/.vim/swaps
 
 
 " ---------- MISC ----------
@@ -148,6 +154,9 @@ set history=1000
 " set spell
 " Don't redraw while executing macros (good performance config)
 set lazyredraw
+" Disable audible bell because it's annoying.
+set noerrorbells visualbell t_vb=
+
 
 " ---------- PLUGINS  ----------
 " Pathogen package manager
@@ -169,6 +178,8 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 " Status line has filename
 set statusline+=\ %f
+" Display col number in status line
+set statusline+=\ col:\ %c
 " Always have status line open even if multiple buffers
 set laststatus=2
 
