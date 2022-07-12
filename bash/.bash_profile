@@ -2,7 +2,7 @@
 echo "reading ${BASH_SOURCE[0]}"
 # echo "Welcome back, Lawrence!"
 export PATH="$PATH:/opt/homebrew/bin/:/opt/homebrew/anaconda3/bin/:${HOME}/scripts"
-conda init bash
+conda init bash > /dev/null
 # export PATH="/Users/lawrencedlin/.ebcli-virtual-env/executables:$PATH"
 
 # >>> conda initialize >>>
@@ -51,7 +51,6 @@ alias ll="ls -lh"
 alias gs="git status"
 alias gc="git commit"
 alias ga="git add"
-alias v="vi"
 
 # Save you from mistyping
 alias sl=ls
@@ -70,8 +69,8 @@ alias term_size='echo "Rows=$(tput lines) Cols=$(tput cols)"'
 
 
 # Vim with python support, default would be /usr/bin/vim with no python support
-alias vi="/opt/homebrew/Cellar/vim/*/bin/vim"
-alias d="cd ~/Documents"
+alias vi="vim"
+alias v="vi"
 alias j="date >> ~/Documents/meditations.txt && vi ~/Documents/meditations.txt" # my journal
 aws_keys='.aws_access_keys'
 if [ -d ${aws_keys} ]; then
@@ -79,3 +78,8 @@ if [ -d ${aws_keys} ]; then
 fi
 export PYTHONBREAKPOINT="ipdb.set_trace"
 cdls() { cd "$@" && ls; }
+
+# IEN specific config
+if [ -d .ien_profile ]; then
+source .ien_profile
+fi
