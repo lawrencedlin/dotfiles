@@ -162,10 +162,16 @@ let g:jedi#show_call_signatures = 0
 " Make supertab use jedi-vim autocomplete when editing python files
 let g:SuperTabDefaultCompletionType = "context"
 
-" Syntastic defaults
+" ---------- Status line ----------
+" Status line has errrors
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+" Status line has filename
+set statusline+=\ %f
+" Always have status line open even if multiple buffers
+set laststatus=2
+
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
