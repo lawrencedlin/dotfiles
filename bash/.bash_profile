@@ -79,7 +79,7 @@ fi
 export PYTHONBREAKPOINT="ipdb.set_trace"
 cdls() { cd "$@" && ls; }
 
-# IEN specific config
-if [ -d .ien_profile ]; then
+# Local machine specific config
+if [ -d .bash_profile_local ]; then
 source .ien_profile
 fi
