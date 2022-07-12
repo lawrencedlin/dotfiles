@@ -1,7 +1,6 @@
 # .bashrc
 # ---------- INITIALIZATION ----------
 echo "reading ${BASH_SOURCE[0]}"
-conda init > /dev/null
 
 # ---------- FUNCTIONS ----------
 
@@ -71,3 +70,5 @@ aws_keys='.aws_access_keys'
 if [ -d ${aws_keys} ]; then
     source ${aws_keys}
 fi
+
+conda init > /dev/null
