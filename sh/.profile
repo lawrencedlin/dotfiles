@@ -1,3 +1,3 @@
 echo 'reading .profile'
-
+bash
 
