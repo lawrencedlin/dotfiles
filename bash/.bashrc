@@ -24,14 +24,6 @@ export PS1
 
 # ---------- ALIASES ----------
 alias ls='ls -G'
-# Brew for intel chip and Brew for M1
-alias intelbrew='/usr/local/bin/brew'
-
-# alias brew='/opt/homebrew/bin/brew'
-
-# Classes directory
-alias s="cd ~/classes"
-
 # Make shorthands for common flags
 alias ll="ls -lh"
 
@@ -52,21 +44,12 @@ alias df="df -h"           # -h prints human readable format
 alias la="ls -A"
 alias lla="la -l"
 
-# Terminal size, may be handy to create a evil shell function later that puts prompt somewhere weird
-alias term_size='echo "Rows=$(tput lines) Cols=$(tput cols)"'
-
 # Vim with python support, default would be /usr/bin/vim with no python support
 alias vi="vim"
 alias v="vi"
-alias j="date >> ~/Documents/meditations.txt && vi ~/Documents/meditations.txt" # my journal
 
 # ---------- LOCAL CONFIG----------
 if [ -e ~/.bashrc_local ]; then
     source ~/.bashrc_local
-fi
-
-aws_keys='.aws_access_keys'
-if [ -e ${aws_keys} ]; then
-    source ${aws_keys}
 fi
 
