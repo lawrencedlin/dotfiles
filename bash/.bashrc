@@ -1,7 +1,7 @@
 # .bashrc
 # ---------- INITIALIZATION ----------
 echo "reading ${BASH_SOURCE[0]}"
-conda init bash > /dev/null
+conda init > /dev/null
 
 # ---------- FUNCTIONS ----------
 
@@ -15,21 +15,6 @@ parse_git_branch() {
 export PYTHONBREAKPOINT="ipdb.set_trace"
 export LSCOLORS=Eafxcxdxbxegedabagacad
 export PATH="$PATH:/opt/homebrew/bin/:/opt/homebrew/anaconda3/bin/:${HOME}/scripts"
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/u/users/l0l0cp1/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/u/users/l0l0cp1/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/u/users/l0l0cp1/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/u/users/l0l0cp1/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
 
 # ---------- PROMPT ----------
 PS1="\[$(tput setaf 6)\]\$?$(parse_git_branch) \[$(tput sgr0)\]\[\033[31m\]\u\[$(tput sgr0)\]@\[\033[38;5;27m\]\h\[$(tput sgr0)\] \[$(tput sgr0)\]in \[\033[38;5;47m\]\w\[$(tput sgr0)\]"
