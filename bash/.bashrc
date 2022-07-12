@@ -13,7 +13,6 @@ parse_git_branch() {
 # ---------- ENV VARIABLES ----------
 export PYTHONBREAKPOINT="ipdb.set_trace"
 export LSCOLORS=Eafxcxdxbxegedabagacad
-export PATH="$PATH:/opt/homebrew/bin/:/opt/homebrew/anaconda3/bin/:${HOME}/scripts"
 
 # ---------- PROMPT ----------
 PS1="\[$(tput setaf 6)\]\$?$(parse_git_branch) \[$(tput sgr0)\]\[\033[31m\]\u\[$(tput sgr0)\]@\[\033[38;5;27m\]\h\[$(tput sgr0)\] \[$(tput sgr0)\]in \[\033[38;5;47m\]\w\[$(tput sgr0)\]"
