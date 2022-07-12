@@ -2,6 +2,7 @@
 echo "reading ${BASH_SOURCE[0]}"
 # echo "Welcome back, Lawrence!"
 export PATH="$PATH:/opt/homebrew/bin/:/opt/homebrew/anaconda3/bin/:${HOME}/scripts"
+conda init bash
 # export PATH="/Users/lawrencedlin/.ebcli-virtual-env/executables:$PATH"
 
 # >>> conda initialize >>>
