@@ -11,3 +11,12 @@
 [submodule "vim/.vim/pack/tpope/start/vim-surround"]
 	path = vim/.vim/pack/tpope/start/vim-surround
 	url = https://github.com/tpope/vim-surround
+[submodule "vim/.vim/pack/vendor/start/ctrlp.vim"]
+	path = vim/.vim/pack/vendor/start/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim
+[submodule "vim/.vim/pack/vendor/start/nerdtree"]
+	path = vim/.vim/pack/vendor/start/nerdtree
+	url = https://github.com/preservim/nerdtree
+[submodule "vim/.vim/pack/vendor/start/syntastic"]
+	path = vim/.vim/pack/vendor/start/syntastic
+	url = https://github.com/vim-syntastic/syntastic

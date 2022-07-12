@@ -136,3 +136,6 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
 nnoremap <C-w>E :SyntasticCheck<CR>
 
+autocmd FileType py,sh,bash setlocal commentstring=#\ %s
+
+

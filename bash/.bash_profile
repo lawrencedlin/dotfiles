@@ -1,7 +1,8 @@
-# Maybe run a script that scrapes a daily quote of the day and prints to stdout
+#!/bin/bash
+echo "reading ${BASH_SOURCE[0]}"
 # echo "Welcome back, Lawrence!"
-export PATH="$PATH:/opt/homebrew/bin/:/opt/homebrew/anaconda3/bin/"
-export PATH="/Users/lawrencedlin/.ebcli-virtual-env/executables:$PATH"
+export PATH="$PATH:/opt/homebrew/bin/:/opt/homebrew/anaconda3/bin/:${HOME}/scripts"
+# export PATH="/Users/lawrencedlin/.ebcli-virtual-env/executables:$PATH"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -38,8 +39,6 @@ alias ls='ls -G'
 alias intelbrew='/usr/local/bin/brew'
 
 # alias brew='/opt/homebrew/bin/brew'
-# This call to brew list is slowing down new shells significantly...Is there a way I can call this only once per day?
-# brew list > ~/dotfiles/brewlist.txt
 
 # Classes directory
 alias s="cd ~/classes"
