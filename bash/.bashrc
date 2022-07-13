@@ -13,6 +13,7 @@ parse_git_branch() {
 # ---------- ENV VARIABLES ----------
 export PYTHONBREAKPOINT="ipdb.set_trace"
 export LSCOLORS=Eafxcxdxbxegedabagacad
+export MATPLOTLIBRC="~/.matplotlibrc"
 
 # Expand the history size
 export HISTFILESIZE=10000

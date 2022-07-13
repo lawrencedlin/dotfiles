@@ -8,3 +8,5 @@ setup folder contains scripts and files to set up env on new machine
 
 If conda does not work, run `conda init [shell]` manually and copy the 
 code into your `~/.bashrc_local`
+
+Note: matplotlibrc in progress
