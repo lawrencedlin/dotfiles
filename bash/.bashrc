@@ -14,6 +14,20 @@ parse_git_branch() {
 export PYTHONBREAKPOINT="ipdb.set_trace"
 export LSCOLORS=Eafxcxdxbxegedabagacad
 
+# Expand the history size
+export HISTFILESIZE=10000
+export HISTSIZE=500
+# Don't put duplicate lines in the history and do not add lines that start with a space
+export HISTCONTROL=erasedups:ignoredups:ignorespace
+
+# Color for manpages in less makes manpages a little easier to read
+export LESS_TERMCAP_mb=$'\E[01;31m'
+export LESS_TERMCAP_md=$'\E[01;31m'
+export LESS_TERMCAP_me=$'\E[0m'
+export LESS_TERMCAP_se=$'\E[0m'
+export LESS_TERMCAP_so=$'\E[01;44;33m'
+export LESS_TERMCAP_ue=$'\E[0m'
+export LESS_TERMCAP_us=$'\E[01;32m'
 # ---------- PROMPT ----------
 PS1="\[$(tput setaf 6)\]\$?$(parse_git_branch) \[$(tput sgr0)\]\[\033[31m\]\u\[$(tput sgr0)\]@\[\033[38;5;27m\]\h\[$(tput sgr0)\] \[$(tput sgr0)\]in \[\033[38;5;47m\]\w\[$(tput sgr0)\]"
 # PS1+="\n$(printf '\[$(tput setaf 3)\]\u26a1\[$(tput sgr0)\]')"
@@ -36,9 +50,11 @@ alias ga="git add"
 alias sl=ls
 
 # Overwrite existing commands for better defaults
+alias cp="cp -i" 
 alias mv="mv -i"           # -i prompts before overwrite
 alias mkdir="mkdir -p"     # -p make parent dirs as needed
 alias df="df -h"           # -h prints human readable format
+alias rm="rm -v"
 
 # Alias can be composed
 alias la="ls -A"
@@ -65,4 +81,9 @@ fi
 # set -o errunset
 # autocorrect for cd 
 shopt -s cdspell
+# Check the window size after each command and, if necessary, update the values of LINES and COLUMNS
+shopt -s checkwinsize
+# Causes bash to append to history instead of overwriting it so if you start a new terminal, you have old session history
+shopt -s histappend
+PROMPT_COMMAND='history -a'
 
