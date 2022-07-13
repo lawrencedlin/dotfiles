@@ -88,8 +88,3 @@ shopt -s checkwinsize
 shopt -s histappend
 PROMPT_COMMAND='history -a'
 
-# Reattach to tmux session. If none then start a new one
-# Only runs if tmux cmd exists and we are in interactive shell and not in tmux or screen already
-if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-  tmux attach || exec tmux 
-fi
