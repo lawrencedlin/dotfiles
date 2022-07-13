@@ -135,6 +135,9 @@ set wildignore=*.o,*~,*.pyc
 " Show matching brackets when text indicator is over them
 set showmatch matchtime=3
 
+" Grey out inactive panes
+hi Normal           guifg=#e6e1de ctermfg=7 gui=none
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
