@@ -48,8 +48,21 @@ alias lla="la -l"
 alias vi="vim"
 alias v="vi"
 
-# ---------- LOCAL CONFIG----------
+# ---------- LOCAL CONFIG ----------
 if [ -e ~/.bashrc_local ]; then
     source ~/.bashrc_local
 fi
+
+# ---------- OPTION ----------
+# To see curr optons
+# set -o 
+## Debugging
+# Print expanded commands
+# set -o xtrace
+# Exit scripts on error
+# set -o errexit
+# Exit script when reference unset variable
+# set -o errunset
+# autocorrect for cd 
+set -o cdspell
 
