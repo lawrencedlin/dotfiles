@@ -64,5 +64,5 @@ fi
 # Exit script when reference unset variable
 # set -o errunset
 # autocorrect for cd 
-set -o cdspell
+shopt -s cdspell
 
