@@ -10,6 +10,7 @@
     ~/.bash_profile: bash/.bash_profile
     ~/.bashrc: bash/.bashrc
     ~/.profile: sh/.profile
+    ~/.tmux.conf: tmux.conf
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
