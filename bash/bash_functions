@@ -1,0 +1,16 @@
+cdls() { cd "$@" && ls; }
+
+parse_git_branch() {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+    }
+
+recent() {
+# ls -t sorts by most recently modified
+# If not arg supplied open most recent file no kw filtering
+if [ -z $1 ]; then
+    ls -t | head -n1 | xargs less
+else
+    ls -t | grep ${1} | head -n1 | xargs less
+fi
+
+}
