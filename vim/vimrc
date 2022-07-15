@@ -162,13 +162,13 @@ set noerrorbells visualbell t_vb=
 
 
 " ---------- PLUGINS  ----------
-" Pathogen package manager
-execute pathogen#infect()
+" " Pathogen package manager
+" execute pathogen#infect()
 
-" Disable jedi autopopup on typing a dot
-let g:jedi#popup_on_dot = 0
-" Show call sign on vim command line show mode must be disabled for this
-let g:jedi#show_call_signatures = 0
+" " Disable jedi autopopup on typing a dot
+" let g:jedi#popup_on_dot = 0
+" " Show call sign on vim command line show mode must be disabled for this
+" let g:jedi#show_call_signatures = 0
 "set noshowmode
 
 " Make supertab use jedi-vim autocomplete when editing python files
