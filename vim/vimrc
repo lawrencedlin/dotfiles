@@ -163,7 +163,7 @@ set noerrorbells visualbell t_vb=
 
 " ---------- PLUGINS  ----------
 " " Pathogen package manager
-" execute pathogen#infect()
+execute pathogen#infect()
 
 " " Disable jedi autopopup on typing a dot
 " let g:jedi#popup_on_dot = 0
