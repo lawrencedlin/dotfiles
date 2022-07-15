@@ -6,10 +6,11 @@
 
 - link:
     ~/.vim: vim/.vim
-    ~/.vimrc: vim/.vimrc
-    ~/.bash_profile: bash/.bash_profile
-    ~/.bashrc: bash/.bashrc
-    ~/.profile: sh/.profile
+    ~/.vimrc: vim/vimrc
+    ~/.bash_profile: bash/bash_profile
+    ~/.bashrc: bash/bashrc
+    ~/.bash_functions_local: bash/bash_functions_local
+    ~/.profile: sh/profile
     ~/.tmux.conf: tmux.conf
 
 - shell:
