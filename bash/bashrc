@@ -4,11 +4,9 @@ echo "reading ${BASH_SOURCE[0]}"
 
 # ---------- FUNCTIONS ----------
 
-cdls() { cd "$@" && ls; }
-
-parse_git_branch() {
-    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}
+if [ -e ~/.bash_functions ]; then
+    source ~/.bash_functions
+fi
 
 # ---------- ENV VARIABLES ----------
 export PYTHONBREAKPOINT="ipdb.set_trace"
@@ -70,6 +68,9 @@ if [ -e ~/.bashrc_local ]; then
     source ~/.bashrc_local
 fi
 
+if [ -e ~/.bash_functions_local ]; then
+    source ~/.bash_functions_local
+fi
 # ---------- OPTION ----------
 # To see curr optons
 # set -o 
