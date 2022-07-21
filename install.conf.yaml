@@ -5,7 +5,7 @@
 - clean: ['~']
 
 - link:
-    ~/.vim: vim/.vim
+    ~/.vim: vim/vim
     ~/.vimrc: vim/vimrc
     ~/.bash_profile: bash/bash_profile
     ~/.bashrc: bash/bashrc
