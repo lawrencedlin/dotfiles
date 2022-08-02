@@ -161,8 +161,8 @@ set noerrorbells visualbell t_vb=
 " ---------- PLUGINS  ----------
 " " Pathogen package manager
 " Only if non-standard runtimepath
-source ~/l0l0cp1/.vim/autoload/pathogen.vim
-set runtimepath+=~/l0l0cp1/.vim/bundle/
+" source ~/l0l0cp1/.vim/autoload/pathogen.vim
+" set runtimepath+=~/l0l0cp1/.vim/bundle/
 "set rtp+=/u/users/svc-p13nexplore/l0l0cp1/.vim/bundle
 execute pathogen#infect()
 
