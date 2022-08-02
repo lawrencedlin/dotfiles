@@ -8,9 +8,9 @@ recent() {
 # ls -t sorts by most recently modified
 # If not arg supplied open most recent file no kw filtering
 if [ -z $1 ]; then
-    ls -t | head -n1 | xargs less
+    vi -R $(ls -t | head -n1)
 else
-    ls -t | grep ${1} | head -n1 | xargs less
+     vi -R $(ls -t | grep ${1} | head -n1)
 fi
 
 }

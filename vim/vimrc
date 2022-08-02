@@ -183,6 +183,8 @@ set statusline+=%*
 set statusline+=\ %f
 " Display col number in status line
 set statusline+=\ col:\ %c
+set statusline+=\ %p%% " percent through file
+set statusline+=\ lines:\ %L " Show how many lines in file
 " Always have status line open even if multiple buffers
 set laststatus=2
 
