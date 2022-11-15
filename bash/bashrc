@@ -4,8 +4,8 @@ echo "reading ${BASH_SOURCE[0]}"
 
 # ---------- FUNCTIONS ----------
 
-if [ -e .bash_functions ]; then
-    source .bash_functions
+if [ -e ~/.bash_functions ]; then
+    source ~/.bash_functions
 fi
 
 # ---------- ENV VARIABLES ----------
@@ -64,12 +64,12 @@ alias vi="vim"
 alias v="vi"
 
 # ---------- LOCAL CONFIG ----------
-if [ -e .bashrc_local ]; then
-    source .bashrc_local
+if [ -e ~/.bashrc_local ]; then
+    source ~/.bashrc_local
 fi
 
-if [ -e .bash_functions_local ]; then
-    source .bash_functions_local
+if [ -e ~/.bash_functions_local ]; then
+    source ~/.bash_functions_local
 fi
 # ---------- OPTION ----------
 # To see curr optons
